@@ -1,9 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/hello', function () {
-    return view('hello');
-});
+use App\Http\Controllers\GreetingController;
 
 Route::get('/hello', [GreetingController::class, 'showHello']);
